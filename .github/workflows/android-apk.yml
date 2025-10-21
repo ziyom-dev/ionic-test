@@ -39,12 +39,13 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          packages: |
-            platforms;android-33
-            build-tools;33.0.2
+      - name: Install Android SDK packages
+        env:
+          ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+        run: |
+          export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+          yes | sdkmanager --licenses
+          yes | sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.2"
 
       - name: Build debug APK
         working-directory: android
