@@ -1,5 +1,5 @@
 {
   "appId": "com.example.ionicapp",
   "appName": "ionic-app",
-  "webDir": "dist"
+  "webDir": ".output/public"
 }

@@ -28,7 +28,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build web assets
-        run: pnpm build
+        run: pnpm generate
 
       - name: Sync Capacitor Android project
         run: pnpm cap sync android
