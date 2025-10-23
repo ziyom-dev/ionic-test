@@ -12,4 +12,11 @@ export default defineNuxtConfig({
     
     }
   },
+  
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: '',
+      siteUrl: 'https://jsonplaceholder.typicode.com/'
+    }
+  },
 })
