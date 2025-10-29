@@ -16,6 +16,7 @@
     "cap:open:android": "cap open android"
   },
   "dependencies": {
+    "@capacitor/app": "^7.1.0",
     "@capacitor/core": "^7.4.3",
     "@capacitor/local-notifications": "^7.0.3",
     "@nuxtjs/ionic": "1.0.2",
