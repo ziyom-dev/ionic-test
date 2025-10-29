@@ -1,0 +1,39 @@
+:root {
+  /* Ionic color palette overrides */
+  --ion-color-primary: #0054e9;
+  --ion-color-primary-rgb: 0, 84, 233;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #004acd;
+  --ion-color-primary-tint: #1a63ed;
+
+  --ion-color-secondary: #f97316;
+  --ion-color-secondary-rgb: 249, 115, 22;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #db6513;
+  --ion-color-secondary-tint: #fa8230;
+}
+
+ion-back-button {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --background: var(--ion-color-primary);
+  --border-radius: 50%;
+  --color: var(--ion-color-primary-contrast);
+  --box-shadow: none;
+}
+
+ion-back-button::part(native) {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
